@@ -174,7 +174,7 @@ section .main .button:hover i{
 
 
 
-/*Products*/
+/Products/
 
 .products{
     width: 100%;
@@ -287,7 +287,7 @@ section .main .button:hover i{
     color: white;
 }
 
-/*About*/
+/About/
 
 .about{
     width: 100%;
@@ -404,7 +404,7 @@ opacity: 1;
 }
 
 
-/*Review*/
+/Review/
 
 .review{
     width: 100%;
@@ -502,7 +502,7 @@ align-items: center;
 }
 
 
-/*Services*/
+/Services/
 
 .services{
     width: 70%;
@@ -552,7 +552,7 @@ cursor: pointer;
 }
 
 
-/*Login Form*/
+/Login Form/
 
 .login_form{
     width: 100%;
@@ -687,7 +687,7 @@ cursor: pointer;
 }
 
 
-/*Footer*/
+/Footer/
 
 footer{
     width: 100%;
@@ -807,3 +807,378 @@ footer .footer_main .tag .search_bar button{
 }
 
 
+/* Scrollbar customization styles */
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 5px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: linear-gradient(to top, #c72092, #6c14d0);
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    /* Adjustments for smaller screens */
+    ::-webkit-scrollbar {
+        width: 10px; /* Adjust width for smaller screens */
+    }
+
+    /* You can add more adjustments as needed */
+}
+/* Common styles for navigation */
+section nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px; /* Add padding to the navigation */
+}
+
+section nav ul li {
+    margin: 0 10px; /* Adjust margin for better spacing */
+}
+
+section nav ul li a {
+    text-decoration: none;
+    color: black;
+    transition: 0.2s;
+    padding: 10px; /* Add padding to the navigation links */
+    border-radius: 5px; /* Add border radius for better appearance */
+}
+
+section nav ul li a:hover {
+    color: #c72092;
+    background-color: #f3f3f3; /* Add background color on hover */
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    section nav ul {
+        flex-direction: column;
+        text-align: center;
+        padding: 0; /* Remove padding on smaller screens */
+    }
+
+    section nav ul li {
+        margin: 10px 0; /* Increase margin for better spacing */
+    }
+}
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    /* Adjustments for smaller screens */
+    section nav .logo {
+        font-size: 25px;
+        margin-left: 10px; /* Adjust margin for better alignment */
+    }
+
+    section .main .main_content .main_text h1 {
+        font-size: 50px; /* Decrease font size for better fit */
+        line-height: 40px; /* Adjust line height for better spacing */
+        margin-left: 0; /* Reset margin for better alignment */
+    }
+
+    section .main .main_content .main_text h1 span {
+        font-size: 40px; /* Decrease font size for better fit */
+    }
+
+    section .main .main_content .main_text p {
+        width: auto; /* Reset width for better responsiveness */
+        padding: 0 10px; /* Adjust padding for better spacing */
+        line-height: 20px; /* Adjust line height for better spacing */
+        position: relative; /* Reset position */
+        top: 0; /* Reset top position */
+        left: 0; /* Reset left position */
+        text-align: center; /* Center align text */
+    }
+
+    section .main .main_content .main_image img {
+        width: 100%; /* Adjust image width for better responsiveness */
+        position: static; /* Reset position */
+        top: 0; /* Reset top position */
+        left: 0; /* Reset left position */
+        margin-top: 20px; /* Adjust margin for better spacing */
+    }
+
+    section .main .button {
+        position: static; /* Reset position */
+        margin: 20px 0; /* Adjust margin for better spacing */
+    }
+
+    .products .box {
+        grid-template-columns: 1fr; /* Adjust grid columns for better display */
+    }
+
+    .products .box .crad {
+        width: 90%; /* Adjust card width for better fit */
+    }
+
+    /* Adjust styles for footer */
+    footer .footer_main .tag .search_bar {
+        width: 80%; /* Adjust width for better fit */
+        margin: 10px auto; /* Center align the search bar */
+    }
+
+    footer .footer_main .tag .search_bar input {
+        width: 100%; /* Adjust input width for better fit */
+    }
+
+    footer .footer_main .tag .social_link {
+        flex-direction: column; /* Stack social links vertically */
+        align-items: center; /* Center align social links */
+    }
+
+    footer .footer_main .tag .social_link a {
+        margin: 5px 0; /* Adjust margin for better spacing */
+    }
+
+    footer .footer_main .tag .social_link a::after {
+        left: 0; /* Reset left position */
+        width: 0; /* Remove gradient width */
+    }
+}
+/* Responsive styles for Products section */
+@media screen and (max-width: 768px) {
+    .products {
+        padding: 20px 0; /* Adjust padding for better spacing */
+    }
+
+    .products h1 {
+        font-size: 40px; /* Decrease font size for better fit */
+    }
+
+    .products .box {
+        grid-template-columns: 1fr; /* Adjust grid columns for better display */
+        gap: 20px; /* Add gap between grid items */
+        margin-top: 20px; /* Adjust margin for better spacing */
+    }
+
+    .products .box .crad {
+        width: 100%; /* Adjust card width for better fit */
+    }
+
+    .products .box .crad .small_card {
+        transform: none; /* Reset transform */
+        opacity: 1; /* Reset opacity */
+        margin: 10px auto; /* Center align small cards */
+    }
+
+    .products .box .card .image img {
+        width: 100%; /* Adjust image width for better responsiveness */
+        margin: 0; /* Remove margin for better alignment */
+    }
+
+    .products .box .crad .small_card i {
+        margin: 0; /* Reset margin */
+    }
+
+    .products .box .crad .products_text h2 {
+        font-size: 24px; /* Decrease font size for better fit */
+        margin-top: 10px; /* Adjust margin for better spacing */
+    }
+
+    .products .box .crad .products_text p {
+        margin: 10px 0; /* Adjust margin for better spacing */
+    }
+
+    .products .box .crad .products_text h3 {
+        margin: 5px 0; /* Adjust margin for better spacing */
+    }
+
+    .products .box .crad .products_text .products_star {
+        margin-bottom: 10px; /* Adjust margin for better spacing */
+    }
+
+    .products .box .crad .products_text .btn {
+        margin-top: 15px; /* Adjust margin for better spacing */
+    }
+}
+/* Responsive styles for Review section */
+@media screen and (max-width: 768px) {
+    .review h1 {
+        font-size: 40px; /* Decrease font size for better fit */
+    }
+
+    .review h1 span {
+        margin-left: 10px; /* Adjust margin for better spacing */
+    }
+
+    .review .review_box {
+        flex-direction: column; /* Adjust flex direction for better layout */
+        align-items: center; /* Center align items */
+        padding-top: 40px; /* Adjust padding for better spacing */
+    }
+
+    .review .profile {
+        margin-top: 20px; /* Adjust margin for better spacing */
+    }
+
+    .review .profile .profile_image {
+        width: 80px; /* Decrease profile image size */
+        height: 80px;
+    }
+
+    .review .review_box .review_card {
+        width: 90%; /* Adjust width for better fit */
+        margin-top: 20px; /* Adjust margin for better spacing */
+    }
+
+    .review .review_box .review_card .card_top {
+        flex-direction: column; /* Adjust flex direction for better layout */
+        align-items: center; /* Center align items */
+    }
+
+    .review .review_box .review_card .card_top .profile .name {
+        margin-top: 10px; /* Adjust margin for better spacing */
+        text-align: center; /* Center align text */
+    }
+
+    .review .review_box .review_card .card_top .profile .name strong {
+        font-size: 18px; /* Decrease font size for better fit */
+    }
+
+    .review .review_box .review_card .card_top .profile .name .like i {
+        font-size: 14px; /* Decrease font size for better fit */
+    }
+
+    .review .review_box .review_card .comment p {
+        margin-top: 20px; /* Adjust margin for better spacing */
+        text-align: center; /* Center align text */
+    }
+}
+/* Responsive styles for Services section */
+@media screen and (max-width: 768px) {
+    .services h1 {
+        font-size: 40px; /* Decrease font size for better fit */
+    }
+
+    .services h1 span {
+        margin-left: 10px; /* Adjust margin for better spacing */
+    }
+
+    .services .services_cards {
+        flex-direction: column; /* Adjust flex direction for better layout */
+        align-items: center; /* Center align items */
+    }
+
+    .services .services_box {
+        margin-top: 20px; /* Adjust margin for better spacing */
+        text-align: center; /* Center align text */
+    }
+
+    .services .services_box i {
+        font-size: 40px; /* Decrease icon size for better fit */
+    }
+
+    .services .services_box h3 {
+        margin-top: 10px; /* Adjust margin for better spacing */
+    }
+
+    .services .services_box p {
+        margin-bottom: 40px; /* Adjust margin for better spacing */
+    }
+}
+/* Responsive styles for Login Form section */
+@media screen and (max-width: 768px) {
+    .login_form {
+        flex-direction: column; /* Adjust flex direction for better layout */
+        align-items: center; /* Center align items */
+    }
+
+    .login_form .left img {
+        width: 100%; /* Make the image fill the width */
+        margin-bottom: 20px; /* Adjust margin for better spacing */
+    }
+
+    .login_form .right {
+        padding: 20px; /* Adjust padding for better spacing */
+    }
+
+    .login_form .right h1 {
+        font-size: 30px; /* Decrease font size for better fit */
+        margin-bottom: 20px; /* Adjust margin for better spacing */
+    }
+
+    .login_form .right p {
+        font-size: 14px; /* Decrease font size for better fit */
+        margin-bottom: 10px; /* Adjust margin for better spacing */
+    }
+
+    .login_form .right .user,
+    .login_form .right .password {
+        width: 100%; /* Make input fields fill the width */
+        margin-bottom: 20px; /* Adjust margin for better spacing */
+    }
+
+    .login_form .right .user i,
+    .login_form .right .password i {
+        display: none; /* Hide icons for smaller screens */
+    }
+
+    .login_form .right .user .username,
+    .login_form .right .password input {
+        padding-left: 10px; /* Adjust padding for better spacing */
+    }
+
+    .login_form .right button {
+        width: 100%; /* Make button fill the width */
+    }
+
+    .login_form .right .loging_icon {
+        display: none; /* Hide login icons for smaller screens */
+    }
+}
+/* Responsive styles for Footer section */
+@media screen and (max-width: 768px) {
+    footer .footer_main {
+        flex-direction: column; /* Adjust flex direction for better layout */
+        align-items: center; /* Center align items */
+    }
+
+    footer .footer_main .tag {
+        margin-top: 20px; /* Adjust margin for better spacing */
+    }
+
+    footer .footer_main .tag h1 {
+        font-size: 20px; /* Decrease font size for better fit */
+    }
+
+    footer .footer_main .tag a {
+        margin: 5px 0; /* Adjust margin for better spacing */
+    }
+
+    footer .footer_main .tag a i {
+        padding: 0 5px; /* Adjust padding for better spacing */
+    }
+
+    footer .footer_main .tag .social_link {
+        flex-direction: column; /* Adjust flex direction for better layout */
+        margin-bottom: 20px; /* Adjust margin for better spacing */
+    }
+
+    footer .footer_main .tag .social_link a {
+        margin: 5px 0; /* Adjust margin for better spacing */
+    }
+
+    footer .footer_main .tag .social_link a::after {
+        left: 0; /* Adjust position for pseudo-element */
+    }
+
+    footer .footer_main .tag .search_bar {
+        width: 80%; /* Adjust width for better fit */
+        margin-bottom: 20px; /* Adjust margin for better spacing */
+    }
+
+    footer .footer_main .tag .search_bar input {
+        width: 100%; /* Make input field fill the width */
+    }
+
+    footer .footer_main .tag .search_bar button {
+        width: 100%; /* Make button fill the width */
+    }
+}
